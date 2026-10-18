@@ -61,7 +61,7 @@ _i[3].ResampleMode = Enum.ResamplerMode.Default
 _i[3].ScaleType = Enum.ScaleType.Stretch
 _i[3].SliceCenter = Rect.new(0,0,0,0)
 _i[3].SliceScale = 1
-_i[3].Name = [[tehtrhytrjtjutjuy]]
+_i[3].Name = [[1B]]
 _i[3].Parent = _i[2]
 
 _i[4] = Instance.new("ImageLabel")
@@ -88,7 +88,7 @@ _i[4].ResampleMode = Enum.ResamplerMode.Default
 _i[4].ScaleType = Enum.ScaleType.Stretch
 _i[4].SliceCenter = Rect.new(0,0,0,0)
 _i[4].SliceScale = 1
-_i[4].Name = [[ergregrgr]]
+_i[4].Name = [[2B]]
 _i[4].Parent = _i[2]
 
 _i[5] = Instance.new("UIStroke")
@@ -247,7 +247,7 @@ end
 
 -- Scripts:
 
-local function XSXWU_fake_script()
+local function RMMLS_fake_script()
 	local script = Instance.new('LocalScript')
 	script.Name = [[LocalScript]]
 	script.Parent = _i[2]
@@ -271,6 +271,8 @@ local function XSXWU_fake_script()
 	local labelTitre = LHBR1:WaitForChild("TITRE")
 	local labelMessages = LHBR1:WaitForChild("MESSAGES")
 	local labelImage = LHBR1:FindFirstChild("IMAGES")
+	local DB1 = LHBR1:FindFirstChild("1B")
+	local DB2 = LHBR1:FindFirstChild("2B")
 	
 	-- ==========================================
 	-- GESTION DES VARIABLES GLOBALES
@@ -448,6 +450,11 @@ local function XSXWU_fake_script()
 	
 	LHBR1.BackgroundColor3 = fondChoisi
 	
+	if DB1 then
+		DB1.ImageColor3 = fondChoisi
+		DB2.ImageColor3 = fondChoisi
+	end
+	
 	-- ==========================================
 	-- GESTION DU CONTOUR DE LA FORME (UISTROKE ET UIGRADIENT)
 	-- ==========================================
@@ -555,8 +562,7 @@ local function XSXWU_fake_script()
 	
 	guiMessage:Destroy()
 end
-coroutine.wrap(XSXWU_fake_script)()
+coroutine.wrap(RMMLS_fake_script)()
 
 
 _i[1].Parent = PlayerGui
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
