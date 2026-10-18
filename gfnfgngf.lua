@@ -27,7 +27,7 @@ _i[2].BorderColor3 = Color3.fromRGB(0,0,0)
 _i[2].BorderSizePixel = 0
 _i[2].ClipsDescendants = false
 _i[2].LayoutOrder = 0
-_i[2].Position = UDim2.new(0.333126,0,0.407325,0)
+_i[2].Position = UDim2.new(0.360472,0,0.405105,0)
 _i[2].Rotation = 0
 _i[2].Selectable = false
 _i[2].Size = UDim2.new(0.333748,0,0.18535,0)
@@ -215,21 +215,14 @@ _i[11].DominantAxis = Enum.DominantAxis.Width
 _i[11].Name = [[UIAspectRatioConstraint]]
 _i[11].Parent = _i[10]
 
-_i[12] = Instance.new("UIAspectRatioConstraint")
-_i[12].AspectRatio = 3.215568780899048
-_i[12].AspectType = Enum.AspectType.FitWithinMaxSize
-_i[12].DominantAxis = Enum.DominantAxis.Width
-_i[12].Name = [[UIAspectRatioConstraint]]
+_i[12] = Instance.new("UIGradient")
+_i[12].Color = ColorSequence.new({ColorSequenceKeypoint.new(0,Color3.fromRGB(0,0,0)),ColorSequenceKeypoint.new(0.961794,Color3.fromRGB(31,31,31)),ColorSequenceKeypoint.new(1,Color3.fromRGB(255,255,255))})
+_i[12].Enabled = true
+_i[12].Offset = Vector2.new(0,0)
+_i[12].Rotation = 90
+_i[12].Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,0,0),NumberSequenceKeypoint.new(1,0,0)})
+_i[12].Name = [[UIGradient]]
 _i[12].Parent = _i[2]
-
-_i[13] = Instance.new("UIGradient")
-_i[13].Color = ColorSequence.new({ColorSequenceKeypoint.new(0,Color3.fromRGB(0,0,0)),ColorSequenceKeypoint.new(0.961794,Color3.fromRGB(31,31,31)),ColorSequenceKeypoint.new(1,Color3.fromRGB(255,255,255))})
-_i[13].Enabled = true
-_i[13].Offset = Vector2.new(0,0)
-_i[13].Rotation = 90
-_i[13].Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,0,0),NumberSequenceKeypoint.new(1,0,0)})
-_i[13].Name = [[UIGradient]]
-_i[13].Parent = _i[2]
 
 
 -- FAKE REQUIRE SYSTEM FOR MODULES
@@ -247,7 +240,7 @@ end
 
 -- Scripts:
 
-local function RMMLS_fake_script()
+local function VHIZV_fake_script()
 	local script = Instance.new('LocalScript')
 	script.Name = [[LocalScript]]
 	script.Parent = _i[2]
@@ -562,7 +555,7 @@ local function RMMLS_fake_script()
 	
 	guiMessage:Destroy()
 end
-coroutine.wrap(RMMLS_fake_script)()
+coroutine.wrap(VHIZV_fake_script)()
 
 
 _i[1].Parent = PlayerGui
