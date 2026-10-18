@@ -34,7 +34,7 @@ _i[2].Size = UDim2.new(0.333748,0,0.18535,0)
 _i[2].SizeConstraint = Enum.SizeConstraint.RelativeXY
 _i[2].Visible = true
 _i[2].ZIndex = 1
-_i[2].Name = [[LHBR1]]
+_i[2].Name = [[Frame]]
 _i[2].Parent = _i[1]
 
 _i[3] = Instance.new("ImageLabel")
@@ -61,7 +61,7 @@ _i[3].ResampleMode = Enum.ResamplerMode.Default
 _i[3].ScaleType = Enum.ScaleType.Stretch
 _i[3].SliceCenter = Rect.new(0,0,0,0)
 _i[3].SliceScale = 1
-_i[3].Name = [[1B]]
+_i[3].Name = [[tehtrhytrjtjutjuy]]
 _i[3].Parent = _i[2]
 
 _i[4] = Instance.new("ImageLabel")
@@ -88,7 +88,7 @@ _i[4].ResampleMode = Enum.ResamplerMode.Default
 _i[4].ScaleType = Enum.ScaleType.Stretch
 _i[4].SliceCenter = Rect.new(0,0,0,0)
 _i[4].SliceScale = 1
-_i[4].Name = [[2B]]
+_i[4].Name = [[ergregrgr]]
 _i[4].Parent = _i[2]
 
 _i[5] = Instance.new("UIStroke")
@@ -101,47 +101,45 @@ _i[5].Transparency = 0
 _i[5].Name = [[UIStroke]]
 _i[5].Parent = _i[2]
 
-_i[6] = Instance.new("UIGradient")
-_i[6].Color = ColorSequence.new({ColorSequenceKeypoint.new(0,Color3.fromRGB(0,0,0)),ColorSequenceKeypoint.new(0.956811,Color3.fromRGB(25,25,25)),ColorSequenceKeypoint.new(1,Color3.fromRGB(255,255,255))})
-_i[6].Enabled = true
-_i[6].Offset = Vector2.new(0,0)
-_i[6].Rotation = 90
-_i[6].Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,0,0),NumberSequenceKeypoint.new(1,0,0)})
-_i[6].Name = [[UIGradient]]
+_i[6] = Instance.new("TextLabel")
+_i[6].AnchorPoint = Vector2.new(0,0)
+_i[6].BackgroundColor3 = Color3.fromRGB(255,255,255)
+_i[6].BackgroundTransparency = 1
+_i[6].BorderColor3 = Color3.fromRGB(0,0,0)
+_i[6].BorderSizePixel = 0
+_i[6].ClipsDescendants = false
+_i[6].LayoutOrder = 0
+_i[6].Position = UDim2.new(0.0130354,0,0.0479042,0)
+_i[6].Rotation = 0
+_i[6].Selectable = false
+_i[6].Size = UDim2.new(0.972067,0,0.904192,0)
+_i[6].SizeConstraint = Enum.SizeConstraint.RelativeXY
+_i[6].Visible = true
+_i[6].ZIndex = 2
+_i[6].Font = Enum.Font.SourceSans
+_i[6].LineHeight = 1
+_i[6].MaxVisibleGraphemes = -1
+_i[6].RichText = false
+_i[6].Text = [[TEXT]]
+_i[6].TextColor3 = Color3.fromRGB(255,255,255)
+_i[6].TextScaled = true
+_i[6].TextSize = 14
+_i[6].TextStrokeColor3 = Color3.fromRGB(0,0,0)
+_i[6].TextStrokeTransparency = 1
+_i[6].TextTransparency = 0
+_i[6].TextTruncate = Enum.TextTruncate.None
+_i[6].TextWrapped = true
+_i[6].TextXAlignment = Enum.TextXAlignment.Left
+_i[6].TextYAlignment = Enum.TextYAlignment.Top
+_i[6].Name = [[MESSAGES]]
 _i[6].Parent = _i[2]
 
-_i[7] = Instance.new("TextLabel")
-_i[7].AnchorPoint = Vector2.new(0,0)
-_i[7].BackgroundColor3 = Color3.fromRGB(255,255,255)
-_i[7].BackgroundTransparency = 1
-_i[7].BorderColor3 = Color3.fromRGB(0,0,0)
-_i[7].BorderSizePixel = 0
-_i[7].ClipsDescendants = false
-_i[7].LayoutOrder = 0
-_i[7].Position = UDim2.new(0.0130354,0,0.0479042,0)
-_i[7].Rotation = 0
-_i[7].Selectable = false
-_i[7].Size = UDim2.new(0.972067,0,0.904192,0)
-_i[7].SizeConstraint = Enum.SizeConstraint.RelativeXY
-_i[7].Visible = true
-_i[7].ZIndex = 1
-_i[7].Font = Enum.Font.SourceSans
-_i[7].LineHeight = 1
-_i[7].MaxVisibleGraphemes = -1
-_i[7].RichText = false
-_i[7].Text = [[TEXT]]
-_i[7].TextColor3 = Color3.fromRGB(255,255,255)
-_i[7].TextScaled = true
-_i[7].TextSize = 14
-_i[7].TextStrokeColor3 = Color3.fromRGB(0,0,0)
-_i[7].TextStrokeTransparency = 1
-_i[7].TextTransparency = 0
-_i[7].TextTruncate = Enum.TextTruncate.None
-_i[7].TextWrapped = true
-_i[7].TextXAlignment = Enum.TextXAlignment.Left
-_i[7].TextYAlignment = Enum.TextYAlignment.Top
-_i[7].Name = [[MESSAGES]]
-_i[7].Parent = _i[2]
+_i[7] = Instance.new("UIAspectRatioConstraint")
+_i[7].AspectRatio = 3.456953525543213
+_i[7].AspectType = Enum.AspectType.FitWithinMaxSize
+_i[7].DominantAxis = Enum.DominantAxis.Width
+_i[7].Name = [[UIAspectRatioConstraint]]
+_i[7].Parent = _i[6]
 
 _i[8] = Instance.new("TextLabel")
 _i[8].AnchorPoint = Vector2.new(0,0)
@@ -157,7 +155,7 @@ _i[8].Selectable = false
 _i[8].Size = UDim2.new(0.292365,0,0.479042,0)
 _i[8].SizeConstraint = Enum.SizeConstraint.RelativeXY
 _i[8].Visible = true
-_i[8].ZIndex = 1
+_i[8].ZIndex = 2
 _i[8].Font = Enum.Font.SourceSans
 _i[8].LineHeight = 1
 _i[8].MaxVisibleGraphemes = -1
@@ -176,39 +174,62 @@ _i[8].TextYAlignment = Enum.TextYAlignment.Center
 _i[8].Name = [[TITRE]]
 _i[8].Parent = _i[2]
 
-_i[9] = Instance.new("ImageLabel")
-_i[9].AnchorPoint = Vector2.new(0,0)
-_i[9].BackgroundColor3 = Color3.fromRGB(255,255,255)
-_i[9].BackgroundTransparency = 1
-_i[9].BorderColor3 = Color3.fromRGB(0,0,0)
-_i[9].BorderSizePixel = 0
-_i[9].ClipsDescendants = false
-_i[9].LayoutOrder = 0
-_i[9].Position = UDim2.new(0.288641,0,-0.520958,0)
-_i[9].Rotation = 0
-_i[9].Selectable = false
-_i[9].Size = UDim2.new(0.154562,0,0.497006,0)
-_i[9].SizeConstraint = Enum.SizeConstraint.RelativeXY
-_i[9].Visible = true
-_i[9].ZIndex = 1
-_i[9].Image = [[rbxassetid://93909275221626]]
-_i[9].ImageColor3 = Color3.fromRGB(255,255,255)
-_i[9].ImageRectOffset = Vector2.new(0,0)
-_i[9].ImageRectSize = Vector2.new(0,0)
-_i[9].ImageTransparency = 0
-_i[9].ResampleMode = Enum.ResamplerMode.Default
-_i[9].ScaleType = Enum.ScaleType.Stretch
-_i[9].SliceCenter = Rect.new(0,0,0,0)
-_i[9].SliceScale = 1
-_i[9].Name = [[IMAGES]]
-_i[9].Parent = _i[2]
+_i[9] = Instance.new("UIAspectRatioConstraint")
+_i[9].AspectRatio = 1.962499976158142
+_i[9].AspectType = Enum.AspectType.FitWithinMaxSize
+_i[9].DominantAxis = Enum.DominantAxis.Width
+_i[9].Name = [[UIAspectRatioConstraint]]
+_i[9].Parent = _i[8]
 
-_i[10] = Instance.new("UIAspectRatioConstraint")
-_i[10].AspectRatio = 3.215568780899048
-_i[10].AspectType = Enum.AspectType.FitWithinMaxSize
-_i[10].DominantAxis = Enum.DominantAxis.Width
-_i[10].Name = [[UIAspectRatioConstraint]]
+_i[10] = Instance.new("ImageLabel")
+_i[10].AnchorPoint = Vector2.new(0,0)
+_i[10].BackgroundColor3 = Color3.fromRGB(255,255,255)
+_i[10].BackgroundTransparency = 1
+_i[10].BorderColor3 = Color3.fromRGB(0,0,0)
+_i[10].BorderSizePixel = 0
+_i[10].ClipsDescendants = false
+_i[10].LayoutOrder = 0
+_i[10].Position = UDim2.new(0.288641,0,-0.520958,0)
+_i[10].Rotation = 0
+_i[10].Selectable = false
+_i[10].Size = UDim2.new(0.154562,0,0.497006,0)
+_i[10].SizeConstraint = Enum.SizeConstraint.RelativeXY
+_i[10].Visible = true
+_i[10].ZIndex = 2
+_i[10].Image = [[rbxassetid://93909275221626]]
+_i[10].ImageColor3 = Color3.fromRGB(255,255,255)
+_i[10].ImageRectOffset = Vector2.new(0,0)
+_i[10].ImageRectSize = Vector2.new(0,0)
+_i[10].ImageTransparency = 0
+_i[10].ResampleMode = Enum.ResamplerMode.Default
+_i[10].ScaleType = Enum.ScaleType.Stretch
+_i[10].SliceCenter = Rect.new(0,0,0,0)
+_i[10].SliceScale = 1
+_i[10].Name = [[IMAGES]]
 _i[10].Parent = _i[2]
+
+_i[11] = Instance.new("UIAspectRatioConstraint")
+_i[11].AspectRatio = 1
+_i[11].AspectType = Enum.AspectType.FitWithinMaxSize
+_i[11].DominantAxis = Enum.DominantAxis.Width
+_i[11].Name = [[UIAspectRatioConstraint]]
+_i[11].Parent = _i[10]
+
+_i[12] = Instance.new("UIAspectRatioConstraint")
+_i[12].AspectRatio = 3.215568780899048
+_i[12].AspectType = Enum.AspectType.FitWithinMaxSize
+_i[12].DominantAxis = Enum.DominantAxis.Width
+_i[12].Name = [[UIAspectRatioConstraint]]
+_i[12].Parent = _i[2]
+
+_i[13] = Instance.new("UIGradient")
+_i[13].Color = ColorSequence.new({ColorSequenceKeypoint.new(0,Color3.fromRGB(0,0,0)),ColorSequenceKeypoint.new(0.961794,Color3.fromRGB(31,31,31)),ColorSequenceKeypoint.new(1,Color3.fromRGB(255,255,255))})
+_i[13].Enabled = true
+_i[13].Offset = Vector2.new(0,0)
+_i[13].Rotation = 90
+_i[13].Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,0,0),NumberSequenceKeypoint.new(1,0,0)})
+_i[13].Name = [[UIGradient]]
+_i[13].Parent = _i[2]
 
 
 -- FAKE REQUIRE SYSTEM FOR MODULES
@@ -226,7 +247,7 @@ end
 
 -- Scripts:
 
-local function BRLKV_fake_script()
+local function XSXWU_fake_script()
 	local script = Instance.new('LocalScript')
 	script.Name = [[LocalScript]]
 	script.Parent = _i[2]
@@ -236,19 +257,20 @@ local function BRLKV_fake_script()
 	-- ==========================================
 	local TweenService = game:GetService("TweenService")
 	local RunService = game:GetService("RunService")
+	local LocalizationService = game:GetService("LocalizationService") -- Service de traduction
+	local Players = game:GetService("Players")
 	
-	-- L'objet LHBR1 (l'image principale)
+	-- L'objet Frame principale (qui contient le script)
 	local LHBR1 = script.Parent
+	local localPlayer = Players.LocalPlayer
 	
-	-- L'interface globale
+	-- L'interface globale (message)
 	local guiMessage = LHBR1.Parent
 	
-	-- Les éléments enfants
+	-- Les éléments enfants visibles sur l'image
 	local labelTitre = LHBR1:WaitForChild("TITRE")
 	local labelMessages = LHBR1:WaitForChild("MESSAGES")
 	local labelImage = LHBR1:FindFirstChild("IMAGES")
-	local frame1 = LHBR1:FindFirstChild("1B")
-	local frame2 = LHBR1:FindFirstChild("2B")
 	
 	-- ==========================================
 	-- GESTION DES VARIABLES GLOBALES
@@ -256,12 +278,12 @@ local function BRLKV_fake_script()
 	local tempsAffichage = 5
 	local titreTexte = "Titre par défaut"
 	local messageTexte = "Message par défaut"
-	local styleContour = 1       -- LD pour le contour du texte
+	local styleContour = 1       -- LD pour le contour de la forme
 	local idImage = 0            -- L'ID de l'image (0 = pas d'image)
 	local arrondiImage = 0       -- Arrondi de l'image (0 = carré)
-	local couleurFond = 1        -- Couleur du fond (LHBR1 et Frame 1)
+	local couleurFond = 1        -- Couleur du fond de la Frame
 	
-	-- Nouvelles variables pour le texte
+	-- Réglages pour le texte
 	local policeTexte = 1        -- Choix de la police (1 à 10)
 	local grasTexte = false      -- Gras (B / Gonflé)
 	local italiqueTexte = false  -- Italique (I / Plié)
@@ -278,7 +300,7 @@ local function BRLKV_fake_script()
 			if getgenv().ImageArrondi ~= nil then arrondiImage = getgenv().ImageArrondi end
 			if getgenv().CouleurFond ~= nil then couleurFond = getgenv().CouleurFond end
 	
-			-- Récupération des nouveaux réglages de texte
+			-- Récupération des réglages de texte
 			if getgenv().Police ~= nil then policeTexte = getgenv().Police end
 			if getgenv().Gras ~= nil then grasTexte = getgenv().Gras end
 			if getgenv().Italique ~= nil then italiqueTexte = getgenv().Italique end
@@ -286,14 +308,40 @@ local function BRLKV_fake_script()
 		end
 	end)
 	
-	labelTitre.Text = titreTexte
-	labelMessages.Text = messageTexte
+	-- ==========================================
+	-- FONCTION DE TRADUCTION AUTOMATIQUE
+	-- ==========================================
+	local function TraduireTexte(texteBrut)
+		if texteBrut == "" or tostring(texteBrut) == "0" then return texteBrut end
+	
+		-- On récupère le traducteur propre à la langue du joueur de manière sécurisée
+		local succes, translator = pcall(function()
+			return LocalizationService:GetTranslatorForPlayerAsync(localPlayer)
+		end)
+	
+		if succes and translator then
+			-- On demande à Roblox de traduire la phrase par rapport au contexte de l'UI
+			local traductionSucces, texteTraduit = pcall(function()
+				return translator:Translate(LHBR1, texteBrut)
+			end)
+	
+			if traductionSucces then
+				return texteTraduit
+			end
+		end
+	
+		-- Si la traduction échoue ou si le joueur parle la langue d'origine, on renvoie le texte de base
+		return texteBrut
+	end
+	
+	-- Application des textes traduits automatiquement
+	labelTitre.Text = TraduireTexte(titreTexte)
+	labelMessages.Text = TraduireTexte(messageTexte)
 	
 	-- ==========================================
 	-- GESTION DU TEXTE (POLICE, GRAS, ITALIQUE, COULEUR)
 	-- ==========================================
 	
-	-- 1. Configuration des 10 polices d'écriture
 	local listePolices = {
 		Enum.Font.SourceSans,      -- 1: Classique
 		Enum.Font.Gotham,          -- 2: Moderne / Propre
@@ -312,7 +360,6 @@ local function BRLKV_fake_script()
 		policeChoisie = listePolices[policeTexte]
 	end
 	
-	-- On définit le poids (Gras) et le style (Italique)
 	local poidsPolice = Enum.FontWeight.Regular
 	if grasTexte == true then
 		poidsPolice = Enum.FontWeight.Bold
@@ -323,7 +370,6 @@ local function BRLKV_fake_script()
 		stylePolice = Enum.FontStyle.Italic
 	end
 	
-	-- On applique la police avec le gras et l'italique via la propriété FontFace
 	pcall(function()
 		local famillePolice = Font.fromEnum(policeChoisie).Family
 		local nouvelleFontFace = Font.new(famillePolice, poidsPolice, stylePolice)
@@ -331,7 +377,6 @@ local function BRLKV_fake_script()
 		labelMessages.FontFace = nouvelleFontFace
 	end)
 	
-	-- 2. Configuration de la couleur du texte (TextColor3)
 	local couleursDeTexte = {
 		Color3.fromRGB(255, 255, 255), -- 1: Blanc (Par défaut)
 		Color3.fromRGB(0, 0, 0),       -- 2: Noir
@@ -352,7 +397,6 @@ local function BRLKV_fake_script()
 	
 	labelTitre.TextColor3 = couleurTxtChoisie
 	labelMessages.TextColor3 = couleurTxtChoisie
-	
 	
 	-- ==========================================
 	-- GESTION DE L'IMAGE ("IMAGES")
@@ -382,7 +426,7 @@ local function BRLKV_fake_script()
 	end
 	
 	-- ==========================================
-	-- GESTION DE LA COULEUR DE FOND (LHBR1 et Frame 1)
+	-- GESTION DE LA COULEUR DE FOND (LHBR1 / Frame)
 	-- ==========================================
 	local couleursDeFond = {
 		Color3.fromRGB(255, 255, 255), -- 1: Blanc
@@ -390,11 +434,11 @@ local function BRLKV_fake_script()
 		Color3.fromRGB(0, 85, 255),    -- 3: Bleu
 		Color3.fromRGB(0, 255, 0),     -- 4: Vert
 		Color3.fromRGB(255, 255, 0),   -- 5: Jaune
-		Color3.fromRGB(170, 0, 255),   -- 6: Violet
-		Color3.fromRGB(255, 170, 0),   -- 7: Orange
-		Color3.fromRGB(255, 85, 255),  -- 8: Rose
-		Color3.fromRGB(0, 255, 255),   -- 9: Cyan
-		Color3.fromRGB(170, 255, 127)  -- 10: Vert clair
+		Color3.fromRGB(170, 0, 255),   -- 7: Violet
+		Color3.fromRGB(255, 170, 0),   -- 8: Orange
+		Color3.fromRGB(255, 85, 255),  -- 9: Rose
+		Color3.fromRGB(0, 255, 255),   -- 10: Cyan
+		Color3.fromRGB(170, 255, 127)  -- 11: Vert clair
 	}
 	
 	local fondChoisi = couleursDeFond[1]
@@ -402,21 +446,17 @@ local function BRLKV_fake_script()
 		fondChoisi = couleursDeFond[couleurFond]
 	end
 	
-	LHBR1.ImageColor3 = fondChoisi
-	if frame1 then
-		frame1.ImageColor3 = fondChoisi
-		frame2.ImageColor3 = fondChoisi
-	end
+	LHBR1.BackgroundColor3 = fondChoisi
 	
 	-- ==========================================
-	-- GESTION DU CONTOUR (UISTROKE ET UIGRADIENT)
+	-- GESTION DU CONTOUR DE LA FORME (UISTROKE ET UIGRADIENT)
 	-- ==========================================
-	local function AppliquerContour(elementTexte, ld)
-		local contour = elementTexte:FindFirstChildOfClass("UIStroke")
+	local function AppliquerContour(elementForme, ld)
+		local contour = elementForme:FindFirstChildOfClass("UIStroke")
 		if not contour then
 			contour = Instance.new("UIStroke")
 			contour.Thickness = 2.5
-			contour.Parent = elementTexte
+			contour.Parent = elementForme
 		end
 	
 		if ld <= 10 then
@@ -433,8 +473,13 @@ local function BRLKV_fake_script()
 			end
 		elseif ld >= 11 and ld <= 15 then
 			contour.Color = Color3.fromRGB(255, 255, 255) 
-			local gradient = Instance.new("UIGradient")
-			gradient.Parent = contour
+			local gradient = contour:FindFirstChildOfClass("UIGradient") or elementForme:FindFirstChildOfClass("UIGradient")
+			if gradient then
+				gradient.Parent = contour
+			else
+				gradient = Instance.new("UIGradient")
+				gradient.Parent = contour
+			end
 	
 			if ld == 11 then
 				gradient.Color = ColorSequence.new{
@@ -477,8 +522,7 @@ local function BRLKV_fake_script()
 		end
 	end
 	
-	AppliquerContour(labelTitre, styleContour)
-	AppliquerContour(labelMessages, styleContour)
+	AppliquerContour(LHBR1, styleContour)
 	
 	-- ==========================================
 	-- PRÉPARATION DE L'ANIMATION D'APPARITION
@@ -495,6 +539,13 @@ local function BRLKV_fake_script()
 	-- ==========================================
 	-- EXÉCUTION DU SYSTÈME
 	-- ==========================================
+	
+	local notificationSound = Instance.new("Sound")
+	notificationSound.SoundId = "rbxassetid://9113743483"
+	notificationSound.Volume = 0.8
+	notificationSound.Parent = LHBR1
+	notificationSound:Play()
+	
 	animationEntree:Play()
 	
 	task.wait(1 + tempsAffichage)
@@ -504,7 +555,8 @@ local function BRLKV_fake_script()
 	
 	guiMessage:Destroy()
 end
-coroutine.wrap(BRLKV_fake_script)()
+coroutine.wrap(XSXWU_fake_script)()
 
 
 _i[1].Parent = PlayerGui
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
