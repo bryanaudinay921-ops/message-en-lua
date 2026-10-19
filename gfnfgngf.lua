@@ -240,7 +240,7 @@ end
 
 -- Scripts:
 
-local function VHIZV_fake_script()
+local function TRZKR_fake_script()
 	local script = Instance.new('LocalScript')
 	script.Name = [[LocalScript]]
 	script.Parent = _i[2]
@@ -273,16 +273,21 @@ local function VHIZV_fake_script()
 	local tempsAffichage = 5
 	local titreTexte = "Titre par défaut"
 	local messageTexte = "Message par défaut"
-	local styleContour = 1       -- LD pour le contour de la forme
-	local idImage = 0            -- L'ID de l'image (0 = pas d'image)
-	local arrondiImage = 0       -- Arrondi de l'image (0 = carré)
-	local couleurFond = 1        -- Couleur du fond de la Frame
+	local styleContour = 1        -- LD pour le contour de la forme
+	local idImage = 0             -- L'ID de l'image (0 = pas d'image)
+	local arrondiImage = 0        -- Arrondi de l'image (0 = carré)
+	local couleurFond = 1         -- Couleur du fond de la Frame
 	
 	-- Réglages pour le texte
-	local policeTexte = 1        -- Choix de la police (1 à 10)
-	local grasTexte = false      -- Gras (B / Gonflé)
-	local italiqueTexte = false  -- Italique (I / Plié)
-	local couleurTexte = 1       -- Couleur du texte (1 à 10)
+	local policeTexte = 1         -- Choix de la police (1 à 10)
+	local grasTexte = false       -- Gras (B / Gonflé)
+	local italiqueTexte = false   -- Italique (I / Plié)
+	local couleurTexte = 1        -- Couleur du texte (1 à 10)
+	
+	-- Réglages pour le son
+	local activerSon = true
+	local idSonChoisi = "rbxassetid://109359226723492" -- Son par défaut (Son 1)
+	local volumeDuSon = 0.8
 	
 	pcall(function()
 		if getgenv then
@@ -300,6 +305,24 @@ local function VHIZV_fake_script()
 			if getgenv().Gras ~= nil then grasTexte = getgenv().Gras end
 			if getgenv().Italique ~= nil then italiqueTexte = getgenv().Italique end
 			if getgenv().CouleurTexte ~= nil then couleurTexte = getgenv().CouleurTexte end
+	
+			-- Récupération des réglages de son
+			if getgenv().JouerSon ~= nil then activerSon = getgenv().JouerSon end
+			if getgenv().VolumeSon ~= nil then volumeDuSon = getgenv().VolumeSon end
+			if getgenv().SonID ~= nil then
+				local valSon = getgenv().SonID
+				if tostring(valSon) == "1" then
+					idSonChoisi = "rbxassetid://109359226723492"
+				elseif tostring(valSon) == "2" then
+					idSonChoisi = "rbxassetid://81722295861354"
+				else
+					local formatSon = tostring(valSon)
+					if not string.match(formatSon, "rbxassetid://") then
+						formatSon = "rbxassetid://" .. formatSon
+					end
+					idSonChoisi = formatSon
+				end
+			end
 		end
 	end)
 	
@@ -525,26 +548,36 @@ local function VHIZV_fake_script()
 	AppliquerContour(LHBR1, styleContour)
 	
 	-- ==========================================
-	-- PRÉPARATION DE L'ANIMATION D'APPARITION
+	-- PRÉPARATION DE L'ANIMATION (ARRIVÉE HAUT -> DESCENTE / DÉPART VERS LA DROITE)
 	-- ==========================================
 	local positionOrigine = LHBR1.Position
-	local positionCachee = UDim2.new(1.5, 0, positionOrigine.Y.Scale, positionOrigine.Y.Offset)
-	LHBR1.Position = positionCachee
+	-- Position cachée en haut (hors écran sur l'axe Y)
+	local positionEntreeHaut = UDim2.new(positionOrigine.X.Scale, positionOrigine.X.Offset, -0.5, 0)
+	-- Position cachée à droite (hors écran sur l'axe X)
+	local positionSortieDroite = UDim2.new(1.5, 0, positionOrigine.Y.Scale, positionOrigine.Y.Offset)
+	
+	-- On commence par placer la frame tout en haut
+	LHBR1.Position = positionEntreeHaut
 	
 	local tweenParametres = TweenInfo.new(1, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
 	
+	-- Entrée : descend du haut vers la position d'origine
 	local animationEntree = TweenService:Create(LHBR1, tweenParametres, {Position = positionOrigine})
-	local animationSortie = TweenService:Create(LHBR1, tweenParametres, {Position = positionCachee})
+	-- Sortie : part vers la droite
+	local animationSortie = TweenService:Create(LHBR1, tweenParametres, {Position = positionSortieDroite})
 	
 	-- ==========================================
 	-- EXÉCUTION DU SYSTÈME
 	-- ==========================================
 	
-	local notificationSound = Instance.new("Sound")
-	notificationSound.SoundId = "rbxassetid://9113743483"
-	notificationSound.Volume = 0.8
-	notificationSound.Parent = LHBR1
-	notificationSound:Play()
+	-- Jouer le son si l'option est activée
+	if activerSon == true and idSonChoisi ~= "" and idSonChoisi ~= "0" then
+		local notificationSound = Instance.new("Sound")
+		notificationSound.SoundId = idSonChoisi
+		notificationSound.Volume = volumeDuSon
+		notificationSound.Parent = LHBR1
+		notificationSound:Play()
+	end
 	
 	animationEntree:Play()
 	
@@ -555,7 +588,7 @@ local function VHIZV_fake_script()
 	
 	guiMessage:Destroy()
 end
-coroutine.wrap(VHIZV_fake_script)()
+coroutine.wrap(TRZKR_fake_script)()
 
 
 _i[1].Parent = PlayerGui
