@@ -109,10 +109,10 @@ _i[6].BorderColor3 = Color3.fromRGB(0,0,0)
 _i[6].BorderSizePixel = 0
 _i[6].ClipsDescendants = false
 _i[6].LayoutOrder = 0
-_i[6].Position = UDim2.new(0.0130354,0,0.0479042,0)
+_i[6].Position = UDim2.new(0.0130354,0,0.0479043,0)
 _i[6].Rotation = 0
 _i[6].Selectable = false
-_i[6].Size = UDim2.new(0.972067,0,0.904192,0)
+_i[6].Size = UDim2.new(0.97307,0,0.904192,0)
 _i[6].SizeConstraint = Enum.SizeConstraint.RelativeXY
 _i[6].Visible = true
 _i[6].ZIndex = 2
@@ -134,14 +134,40 @@ _i[6].TextYAlignment = Enum.TextYAlignment.Top
 _i[6].Name = [[MESSAGES]]
 _i[6].Parent = _i[2]
 
-_i[7] = Instance.new("UIAspectRatioConstraint")
-_i[7].AspectRatio = 3.456953525543213
-_i[7].AspectType = Enum.AspectType.FitWithinMaxSize
-_i[7].DominantAxis = Enum.DominantAxis.Width
-_i[7].Name = [[UIAspectRatioConstraint]]
-_i[7].Parent = _i[6]
+_i[7] = Instance.new("TextLabel")
+_i[7].AnchorPoint = Vector2.new(0,0)
+_i[7].BackgroundColor3 = Color3.fromRGB(255,255,255)
+_i[7].BackgroundTransparency = 1
+_i[7].BorderColor3 = Color3.fromRGB(0,0,0)
+_i[7].BorderSizePixel = 0
+_i[7].ClipsDescendants = false
+_i[7].LayoutOrder = 0
+_i[7].Position = UDim2.new(0.549348,0,-0.51497,0)
+_i[7].Rotation = 0
+_i[7].Selectable = false
+_i[7].Size = UDim2.new(0.292365,0,0.479042,0)
+_i[7].SizeConstraint = Enum.SizeConstraint.RelativeXY
+_i[7].Visible = true
+_i[7].ZIndex = 2
+_i[7].Font = Enum.Font.SourceSans
+_i[7].LineHeight = 1
+_i[7].MaxVisibleGraphemes = -1
+_i[7].RichText = false
+_i[7].Text = [[TEXT]]
+_i[7].TextColor3 = Color3.fromRGB(255,255,255)
+_i[7].TextScaled = true
+_i[7].TextSize = 14
+_i[7].TextStrokeColor3 = Color3.fromRGB(0,0,0)
+_i[7].TextStrokeTransparency = 1
+_i[7].TextTransparency = 0
+_i[7].TextTruncate = Enum.TextTruncate.None
+_i[7].TextWrapped = true
+_i[7].TextXAlignment = Enum.TextXAlignment.Center
+_i[7].TextYAlignment = Enum.TextYAlignment.Center
+_i[7].Name = [[TITRE]]
+_i[7].Parent = _i[2]
 
-_i[8] = Instance.new("TextLabel")
+_i[8] = Instance.new("ImageLabel")
 _i[8].AnchorPoint = Vector2.new(0,0)
 _i[8].BackgroundColor3 = Color3.fromRGB(255,255,255)
 _i[8].BackgroundTransparency = 1
@@ -149,80 +175,33 @@ _i[8].BorderColor3 = Color3.fromRGB(0,0,0)
 _i[8].BorderSizePixel = 0
 _i[8].ClipsDescendants = false
 _i[8].LayoutOrder = 0
-_i[8].Position = UDim2.new(0.549348,0,-0.51497,0)
+_i[8].Position = UDim2.new(0.300194,0,-0.514197,0)
 _i[8].Rotation = 0
 _i[8].Selectable = false
-_i[8].Size = UDim2.new(0.292365,0,0.479042,0)
+_i[8].Size = UDim2.new(0.135306,0,0.476723,0)
 _i[8].SizeConstraint = Enum.SizeConstraint.RelativeXY
 _i[8].Visible = true
 _i[8].ZIndex = 2
-_i[8].Font = Enum.Font.SourceSans
-_i[8].LineHeight = 1
-_i[8].MaxVisibleGraphemes = -1
-_i[8].RichText = false
-_i[8].Text = [[TEXT]]
-_i[8].TextColor3 = Color3.fromRGB(255,255,255)
-_i[8].TextScaled = true
-_i[8].TextSize = 14
-_i[8].TextStrokeColor3 = Color3.fromRGB(0,0,0)
-_i[8].TextStrokeTransparency = 1
-_i[8].TextTransparency = 0
-_i[8].TextTruncate = Enum.TextTruncate.None
-_i[8].TextWrapped = true
-_i[8].TextXAlignment = Enum.TextXAlignment.Center
-_i[8].TextYAlignment = Enum.TextYAlignment.Center
-_i[8].Name = [[TITRE]]
+_i[8].Image = [[rbxassetid://93909275221626]]
+_i[8].ImageColor3 = Color3.fromRGB(255,255,255)
+_i[8].ImageRectOffset = Vector2.new(0,0)
+_i[8].ImageRectSize = Vector2.new(0,0)
+_i[8].ImageTransparency = 0
+_i[8].ResampleMode = Enum.ResamplerMode.Default
+_i[8].ScaleType = Enum.ScaleType.Stretch
+_i[8].SliceCenter = Rect.new(0,0,0,0)
+_i[8].SliceScale = 1
+_i[8].Name = [[IMAGES]]
 _i[8].Parent = _i[2]
 
-_i[9] = Instance.new("UIAspectRatioConstraint")
-_i[9].AspectRatio = 1.962499976158142
-_i[9].AspectType = Enum.AspectType.FitWithinMaxSize
-_i[9].DominantAxis = Enum.DominantAxis.Width
-_i[9].Name = [[UIAspectRatioConstraint]]
-_i[9].Parent = _i[8]
-
-_i[10] = Instance.new("ImageLabel")
-_i[10].AnchorPoint = Vector2.new(0,0)
-_i[10].BackgroundColor3 = Color3.fromRGB(255,255,255)
-_i[10].BackgroundTransparency = 1
-_i[10].BorderColor3 = Color3.fromRGB(0,0,0)
-_i[10].BorderSizePixel = 0
-_i[10].ClipsDescendants = false
-_i[10].LayoutOrder = 0
-_i[10].Position = UDim2.new(0.288641,0,-0.520958,0)
-_i[10].Rotation = 0
-_i[10].Selectable = false
-_i[10].Size = UDim2.new(0.154562,0,0.497006,0)
-_i[10].SizeConstraint = Enum.SizeConstraint.RelativeXY
-_i[10].Visible = true
-_i[10].ZIndex = 2
-_i[10].Image = [[rbxassetid://93909275221626]]
-_i[10].ImageColor3 = Color3.fromRGB(255,255,255)
-_i[10].ImageRectOffset = Vector2.new(0,0)
-_i[10].ImageRectSize = Vector2.new(0,0)
-_i[10].ImageTransparency = 0
-_i[10].ResampleMode = Enum.ResamplerMode.Default
-_i[10].ScaleType = Enum.ScaleType.Stretch
-_i[10].SliceCenter = Rect.new(0,0,0,0)
-_i[10].SliceScale = 1
-_i[10].Name = [[IMAGES]]
-_i[10].Parent = _i[2]
-
-_i[11] = Instance.new("UIAspectRatioConstraint")
-_i[11].AspectRatio = 1
-_i[11].AspectType = Enum.AspectType.FitWithinMaxSize
-_i[11].DominantAxis = Enum.DominantAxis.Width
-_i[11].Name = [[UIAspectRatioConstraint]]
-_i[11].Parent = _i[10]
-
-_i[12] = Instance.new("UIGradient")
-_i[12].Color = ColorSequence.new({ColorSequenceKeypoint.new(0,Color3.fromRGB(0,0,0)),ColorSequenceKeypoint.new(0.961794,Color3.fromRGB(31,31,31)),ColorSequenceKeypoint.new(1,Color3.fromRGB(255,255,255))})
-_i[12].Enabled = true
-_i[12].Offset = Vector2.new(0,0)
-_i[12].Rotation = 90
-_i[12].Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,0,0),NumberSequenceKeypoint.new(1,0,0)})
-_i[12].Name = [[UIGradient]]
-_i[12].Parent = _i[2]
+_i[9] = Instance.new("UIGradient")
+_i[9].Color = ColorSequence.new({ColorSequenceKeypoint.new(0,Color3.fromRGB(0,0,0)),ColorSequenceKeypoint.new(0.961794,Color3.fromRGB(31,31,31)),ColorSequenceKeypoint.new(1,Color3.fromRGB(255,255,255))})
+_i[9].Enabled = true
+_i[9].Offset = Vector2.new(0,0)
+_i[9].Rotation = 90
+_i[9].Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,0,0),NumberSequenceKeypoint.new(1,0,0)})
+_i[9].Name = [[UIGradient]]
+_i[9].Parent = _i[2]
 
 
 -- FAKE REQUIRE SYSTEM FOR MODULES
@@ -240,7 +219,7 @@ end
 
 -- Scripts:
 
-local function TRZKR_fake_script()
+local function FRIUL_fake_script()
 	local script = Instance.new('LocalScript')
 	script.Name = [[LocalScript]]
 	script.Parent = _i[2]
@@ -588,7 +567,7 @@ local function TRZKR_fake_script()
 	
 	guiMessage:Destroy()
 end
-coroutine.wrap(TRZKR_fake_script)()
+coroutine.wrap(FRIUL_fake_script)()
 
 
 _i[1].Parent = PlayerGui
